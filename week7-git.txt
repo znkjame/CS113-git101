@@ -1,0 +1,29 @@
+ตรวจสอบว่ามี git หรือ ตรวจสอบว่า git พร้อมใช่หรือไม
+    git --version
+สร้าง git ใหม่
+    git init
+ตรวจสอบไฟล์ใน git 
+    git status
+เพิ่่มไฟล์เข้า staging area ใน git 
+    git add ชื่อไฟล์
+    ต้อง git status หลัง add ทุกครั้ง เพื่อตรวจสอบ
+ตั้งชื่อและอีเมลเพื่อระบุผู้ commit
+    git config user.name "Your Name"
+	git config user.email "yourmail@ku.th"
+    ถ้าเป็นเครื่องส่วนตัว ใส่ --global ด้วย
+Commit ไฟล์ เพื่อเก็บ snapshot ของไฟล์
+    git commit -m "ข้อความที่จะใส่"
+ดู snapshot ทั้งหมด
+    git log --all --decorate --oneline --graph
+เชื่อม local repostory กับ github
+    git remote add <ชื่อremote> <urlของgit>
+    ถ้าต้องชื่อผิด git remote remove <ชื่อ remote> แล้ว add ใหม่
+ส่งไฟล์และประวัติไปเก็บไว้ที่ github
+    git push -u origin master
+นำ snapshot เก่ากลับมาใช้
+    กลับมาทั้งหมด
+        git checkout <commit-id>
+    กลับมาบางไฟล์
+        git checkout <commit-id>  <ชื่อไฟล์>
+การนำ git ที่เก็บไว้ใน server มาทำงานต่อ
+    git clone <git-url>
