@@ -1,0 +1,30 @@
+สร้าง branch ใหม่
+    git branch <name>
+ตรวจสอบว่ามี branch ใดบ้างและกำลังอยู่ใน branch ไหน
+    git branch
+เปลี่ยน branch
+    git checkout <branch name>
+วิธีการ merge branch 
+    ต้องไปที่ branch ปลายทางก่อนโดย 
+        git checkout
+    merge branch จาก name ไปยังปลายทาง
+        git merge <name>
+    จากนั้นก็ push github
+        git push origin ปลายทาง
+  ถ้ามี conflict
+    ต้องไปที่ branch ปลายทางก่อนโดย 
+        git checkout
+    merge branch จาก name ไปยังปลายทาง
+        git merge <name>
+    จะเกิด conflict จะต้องเลือกว่าจะเอาข้อมูลจาก branch ไหนแล้ว 
+        git add แล้ว commit
+    จากนั้นจึง push ขึ้น github
+การ pull แบบมี conflict
+    git pull origin master
+    แล้วเกิด conflict
+    ต้องแก้ไข conflict แล้ว
+    git add file
+    git commit flie
+    แล้ว push ขึ้น git git push origin master
+
+    
